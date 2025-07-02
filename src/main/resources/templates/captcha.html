@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="https://thymeleaf.org" >
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CAPTCHA Verification</title>
+</head>
+<body>
+<h1>Verify CAPTCHA</h1>
+
+<form action="/verify-captcha" method="get">
+    <p>Solve this: <span th:text="${captchaQuestion}"></span></p>
+    <input type="number" name="captchaAnswer" required>
+
+    <p style="color: #891e1e;"> <span th:text="${error}"></span></p>
+
+    <p> <span th:text="${successMessage}"></span></p>
+
+    <button type="submit">SUBMIT CAPTCHA</button>
+</form>
+<style>  body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Heading */
+h1 {
+    color: #333;
+}
+
+/* CAPTCHA Container */
+.captcha-container {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    width: 40%;
+    margin: auto;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+/* Labels */
+label {
+    font-weight: bold;
+    display: block;
+    margin-top: 10px;
+}
+
+/* Input Field */
+input {
+    width: 60%;
+    padding: 10px 15px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+/* Submit Button */
+button {
+    background: green;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+    margin-top: 10px;
+    width: 60%;
+}
+
+
+
+/* Success and Error Messages */
+.message {
+    font-size: 16px;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.success {
+    color: green;
+}
+
+.error {
+    color: red;
+}</style>
+</body>
+</html>
