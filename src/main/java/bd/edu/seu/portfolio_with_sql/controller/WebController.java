@@ -14,7 +14,6 @@ import org.springframework.web.bind.annotation.RequestParam;
 @Controller
 @SpringBootApplication
 public class WebController {
-
     private final UserService userService;
     public WebController(UserService userService) {
         this.userService = userService;
