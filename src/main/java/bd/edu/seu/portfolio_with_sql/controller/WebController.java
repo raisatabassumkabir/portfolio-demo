@@ -56,6 +56,7 @@ public class WebController {
         model.addAttribute("user", new User());
         return "formFields";
     }
+
     @PostMapping("/submit-object-form")
     public String objectSubmit( @ModelAttribute User user){
         userService.addUser(user);

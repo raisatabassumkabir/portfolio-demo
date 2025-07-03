@@ -8,6 +8,7 @@
 <body>
 <h1>Verify CAPTCHA</h1>
 
+
 <form action="/verify-captcha" method="get">
     <p>Solve this: <span th:text="${captchaQuestion}"></span></p>
     <input type="number" name="captchaAnswer" required>
