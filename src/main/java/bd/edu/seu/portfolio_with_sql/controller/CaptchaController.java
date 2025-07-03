@@ -7,8 +7,7 @@ public class CaptchaController {
     private int number2;
     private String operator;
     private int correctAnswer;
-
-//56576787987098p0op90l879i7
+//7879889876575
     private final Random random = new Random();
 
     public String generateCaptchaQuestion() {
