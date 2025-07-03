@@ -7,7 +7,7 @@ public class CaptchaController {
     private int number2;
     private String operator;
     private int correctAnswer;
-    //56879800
+
     private final Random random = new Random();
 
     public String generateCaptchaQuestion() {
