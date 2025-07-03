@@ -2,6 +2,7 @@ package bd.edu.seu.portfolio_with_sql.controller;
 
 import bd.edu.seu.portfolio_with_sql.model.User;
 import bd.edu.seu.portfolio_with_sql.service.UserService;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -14,6 +15,8 @@ import org.springframework.web.bind.annotation.RequestParam;
 @Controller
 @SpringBootApplication
 public class WebController {
+
+    @Autowired
     private final UserService userService;
     public WebController(UserService userService) {
         this.userService = userService;
