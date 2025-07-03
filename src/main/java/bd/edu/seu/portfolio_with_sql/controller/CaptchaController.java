@@ -16,7 +16,6 @@ public class CaptchaController {
         operator = "+";
         correctAnswer = number1 + number2;
 
-
         return number1 + " " + operator + " " + number2 + " = ?";
     }
 
