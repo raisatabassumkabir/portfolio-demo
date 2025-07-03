@@ -27,4 +27,5 @@ public class CaptchaController {
     public boolean isCaptchaCorrect(int userAnswer) {
         return userAnswer == correctAnswer;
     }
+
 }
