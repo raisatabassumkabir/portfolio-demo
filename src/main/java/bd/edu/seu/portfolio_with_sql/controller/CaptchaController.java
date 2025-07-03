@@ -18,7 +18,7 @@ public class CaptchaController {
 
         return number1 + " " + operator + " " + number2 + " = ?";
     }
-//8676767676767
+
     public int getCorrectAnswer() {
         return correctAnswer;
     }
