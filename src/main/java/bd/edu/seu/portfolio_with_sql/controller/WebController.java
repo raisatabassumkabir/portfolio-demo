@@ -14,7 +14,6 @@ import org.springframework.web.bind.annotation.RequestParam;
 @Controller
 @SpringBootApplication
 public class WebController {
-    //5687980
     private final UserService userService;
     public WebController(UserService userService) {
         this.userService = userService;
@@ -62,6 +61,6 @@ public class WebController {
         userService.addUser(user);
         return "success";
     }
-    //5687980
+
 
 }
