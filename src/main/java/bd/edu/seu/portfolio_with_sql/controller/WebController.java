@@ -21,7 +21,6 @@ public class WebController {
     public WebController(UserService userService) {
         this.userService = userService;
     }
-
     @GetMapping("/")
     public String indexPage() {
         return "index";
