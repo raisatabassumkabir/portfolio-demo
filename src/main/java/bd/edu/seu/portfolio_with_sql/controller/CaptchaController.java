@@ -15,7 +15,6 @@ public class CaptchaController {
         number2 = random.nextInt(10) + 1;
         operator = "+";
         correctAnswer = number1 + number2;
-
         return number1 + " " + operator + " " + number2 + " = ?";
     }
     public int getCorrectAnswer() {
