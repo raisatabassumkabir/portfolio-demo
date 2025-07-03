@@ -27,7 +27,7 @@ public class WebController {
     }
 
     private final CaptchaController captchaController=new CaptchaController();
-
+//6789798uok8yuiyhujtgyh
 
     @GetMapping("/captcha")
     public String captchaPage(Model captchaModel) {
